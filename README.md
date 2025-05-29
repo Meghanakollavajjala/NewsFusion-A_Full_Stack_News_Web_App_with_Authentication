@@ -99,15 +99,15 @@ NewsFusion is a modern, responsive web application that fetches and displays the
 
 ---
 
-## Deployment
 
-You can deploy this full-stack app on platforms like Heroku, Vercel, or Render. Make sure to:
+## Live Backend Deployment
 
-- Set environment variables in the hosting platform  
-- Build the React app (`npm run build` inside `client` folder)  
-- Serve static frontend files from backend or deploy frontend and backend separately  
+The backend server for NewsFusion is deployed and running here:
 
----
+[https://newsfusion-a-full-stack-news-web-app.onrender.com](https://newsfusion-a-full-stack-news-web-app.onrender.com)
+
+You can test the API by visiting the root URL or accessing endpoints like `/api/auth`, `/api/user`, etc.
+
 
 ## Folder Structure
 
