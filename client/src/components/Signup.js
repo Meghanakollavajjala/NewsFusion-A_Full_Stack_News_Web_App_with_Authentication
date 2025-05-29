@@ -22,7 +22,7 @@ const Signup = () => {
 
     try {
       const BASE_URL = process.env.REACT_APP_API_BASE_URL;
-      const res = await fetch(`${BASE_URL}/api/auth/signup`, {
+      const res = await fetch(`${BASE_URL}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
