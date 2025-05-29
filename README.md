@@ -100,13 +100,10 @@ NewsFusion is a modern, responsive web application that fetches and displays the
 ---
 
 
-## Live Backend Deployment
+## 🌐 Live Demo
 
-The backend server for NewsFusion is deployed and running here:
-
-[https://newsfusion-a-full-stack-news-web-app.onrender.com](https://newsfusion-a-full-stack-news-web-app.onrender.com)
-
-You can test the API by visiting the root URL or accessing endpoints like `/api/auth`, `/api/user`, etc.
+- 🔗 **Frontend**: [NewsFusion Frontend](https://news-fusion-a-full-stack-news-web-a.vercel.app/)
+- 🔗 **Backend API**: [NewsFusion Backend](https://newsfusion-a-full-stack-news-web-app.onrender.com/)
 
 
 ## Folder Structure
