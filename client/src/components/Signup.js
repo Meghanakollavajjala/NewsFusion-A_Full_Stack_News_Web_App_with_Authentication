@@ -21,7 +21,8 @@ const Signup = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/register', {
+      const BASE_URL = process.env.REACT_APP_API_URL;
+      const res = await fetch(`${BASE_URL}/api/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),
