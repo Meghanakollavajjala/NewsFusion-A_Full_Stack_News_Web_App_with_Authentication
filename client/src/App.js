@@ -11,18 +11,20 @@ function Home() {
   const [query, setQuery] = useState('');
 
   const fetchNews = async (searchQuery = '') => {
-    try {
-      const url = searchQuery
-        ? `http://localhost:5000/api/news?q=${encodeURIComponent(searchQuery)}`
-        : `http://localhost:5000/api/news?category=general`;
+  try {
+    const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+    const url = searchQuery
+      ? `${baseUrl}/api/news?q=${encodeURIComponent(searchQuery)}`
+      : `${baseUrl}/api/news?category=general`;
 
-      const res = await fetch(url);
-      const data = await res.json();
-      setArticles(data.articles || []);
-    } catch (error) {
-      console.error('Error fetching news:', error);
-    }
-  };
+    const res = await fetch(url);
+    const data = await res.json();
+    setArticles(data.articles || []);
+  } catch (error) {
+    console.error('Error fetching news:', error);
+  }
+};
+
 
   useEffect(() => {
     fetchNews();
